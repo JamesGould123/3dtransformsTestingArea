@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>3d Transforms Testing Area</title>
+    <link rel="stylesheet" type="text/css" href="content/style.min.css">
+    <style id="panelStyle"></style>
+</head>
+<body>
+    <div id="container">
+        <div id="panel"><center>Lorem Ipsum</center></div>
+    </div>
+    <div id="inputs">
+        <h1>Transform</h1>
+        <i>(use up down arrow keys for better performance)</i>
+        <div class="row">
+            <label for="rotateY">rotateY</label>
+            <input value="0" name="rotateY" id="rotateY" type="number">
+            <button class="clearBtn" data-idval="rotateY">Clear</button>
+            <span>deg</span>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="row">
+            <label for="rotateX">rotateX</label>
+            <input value="0" name="rotateX" id="rotateX" type="number">
+            <button class="clearBtn" data-idval="rotateX">Clear</button>
+            <span>deg</span>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <label for="rotateZ">rotateZ</label>
+            <input value="0" name="rotateZ" id="rotateZ" type="number">
+            <button class="clearBtn" data-idval="rotateZ">Clear</button>
+            <span>deg</span>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <label for="translateY">translateY</label>
+            <input value="0" name="translateY" id="translateY" type="number">
+            <button class="clearBtn" data-idval="translateY">Clear</button>
+            <span>px</span>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <label for="translateX">translateX</label>
+            <input value="0" name="translateX" id="translateX" type="number">
+            <button class="clearBtn" data-idval="translateX">Clear</button>
+            <span>px</span>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <label for="translateZ">translateZ</label>
+            <input value="0" name="translateZ" id="translateZ" type="number">
+            <button class="clearBtn" data-idval="translateZ">Clear</button>
+            <span>px</span>
+            <div class="clear"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <label for="perspective">Perspective</label>
+            <input value="0" name="perspective" id="perspective" type="number">
+            <span>px</span>
+            <button class="clearBtn" data-idval="perspective">Clear</button>
+            <div class="clear">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <label for="multiplier">multiplier</label>
+            <input value="1" name="multiplier" id="multiplier" type="number">
+            <span>x</span>
+            <button class="clearBtn" data-idval="multiplier">Clear</button>
+            <div class="clear">
+            </div>
+        </div>
+        <hr>
+        <div id="tstyle" class="row">
+            <p class="long">transform style</p>
+            <b id="tstyleinput" class="word">preserve-3d</b>
+            <div class="clear"></div>
+        </div>
+        <div id="bvis" class="row">
+            <p class="long">backface-visibility</p>
+            <b id="bvisinput" class="word">visible</b>
+            <div class="clear"></div>
+        </div>
+        <button id="clearAll">Clear All</button>
+        <hr>
+        <center>Output:</center>
+        <textarea id="output" rows="8" cols="32"></textarea>
+        <button id="outputBtn">Select All Output</button>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/functions.min.js"></script>
+</body>
+</html>

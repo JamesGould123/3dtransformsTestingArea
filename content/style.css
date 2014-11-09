@@ -1,0 +1,123 @@
+﻿/* line 1, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+
+/* line 9, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+.clear {
+  clear: both; }
+
+/* line 13, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+#cont {
+  margin: 200px;
+  display: inline-block;
+  color: #eee;
+  transform-style: preserve-3d;
+  background-color: rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden; }
+  /* line 27, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #cont:hover > #front {
+    transform: rotateY(90deg) translateX(-200px); }
+  /* line 31, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #cont:hover > #side {
+    transform: rotateY(0deg) translateX(-200px); }
+  /* line 36, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #cont > #front, #cont > #side {
+    transition: transform 1000ms linear;
+    float: left;
+    width: 200px;
+    height: 200px; }
+  /* line 43, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #cont > #front {
+    background-color: #333;
+    transform: translateZ(-100px); }
+  /* line 47, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #cont > #side {
+    background-color: #3c3;
+    transform: rotateX(0) rotateY(-90deg) translateZ(100px); }
+
+/* line 56, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+body {
+  background: url('GySvQ.png'); }
+
+/* line 61, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+#container {
+  width: 200px;
+  height: 200px;
+  margin: 300px auto; }
+
+/* line 67, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+#panel {
+  z-index: -2147483647;
+  width: 200px;
+  height: 200px;
+  background: #1e5799;
+  background: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
+  background: -webkit-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  background: -o-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  background: -ms-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  background: linear-gradient(to bottom, #1e5799 0%, #7db9e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+  line-height: 200px;
+  font-family: Arial; }
+
+/* line 89, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+#inputs {
+  z-index: 2147483647;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  background-color: #ccc;
+  background-color: rgba(204, 204, 204, 0.9);
+  border: 3px double #888;
+  padding: 20px;
+  width: 250px; }
+  /* line 99, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #inputs > h1 {
+    margin: 0 0 10px 0; }
+  /* line 102, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #inputs > #clearAll {
+    display: block;
+    margin: 10px auto; }
+  /* line 106, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #inputs > #output {
+    font-size: 12px; }
+  /* line 109, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  #inputs > #outputBtn {
+    display: block;
+    margin: 0 auto; }
+
+/* line 115, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+.row {
+  margin-top: 5px; }
+  /* line 117, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > p, .row > .word, .row > input, .row > span, .row > label {
+    float: left; }
+  /* line 120, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > p, .row > label {
+    margin: 0;
+    width: 90px; }
+  /* line 125, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > input[type=number] {
+    width: 60px; }
+  /* line 128, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > input {
+    margin-left: 10px; }
+  /* line 132, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > span {
+    margin-left: 5px; }
+  /* line 135, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > .clearBtn {
+    float: right; }
+  /* line 139, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > .long {
+    width: 140px; }
+  /* line 142, C:/Users/James/Documents/Visual Studio 2013/Projects/Portfolio/Portfolio/Portfolio/ProjectsExternals/3dtransforms/content/style.scss */
+  .row > .word {
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
